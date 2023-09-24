@@ -1,9 +1,9 @@
 :root {
-    --text: #d7edfe;
-    --background: #112332;
-    --primary: #fda863;
-    --secondary: #011628;
-    --accent: #f16f04;
+    --text: #e4fbee;
+    --background: #030219;
+    --primary: #2ee0d1;
+    --secondary: #071d2d;
+    --accent: #1e84cc; 
 }
 
 body {
@@ -16,22 +16,39 @@ body {
     margin: 0;
 }
 
+/* .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(.7);
+} */
+
 .container {
     display: flex;
     gap: 2em;
     background: var(--secondary);
-    padding: 1em;
+    padding: 1em 4em 1em 1em;
     width: 100%;
     top: 0;
-    /* position: fixed; */
-    float: right;
+    place-content: end;
+    position: fixed;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: var(--primary);
     font-size: 1.2em;
     font-weight: 600;
     padding: 0 .4em;
     position: relative;
+    padding: .2em .35em;
+    transition: .3s;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    color: var(--secondary);
+    border-radius: 50px;
+    background: var(--primary)
 }
